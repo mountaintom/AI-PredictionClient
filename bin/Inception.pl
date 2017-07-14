@@ -5,7 +5,7 @@ use warnings;
 
 use AI::PredictionClient::InceptionClient;
 # PODNAME: Inception.pl
-# ABSTRACT: Example command line Inception client
+# ABSTRACT: Runnable example command line Inception client
 
 use Moo;
 use MooX::Options;
@@ -131,4 +131,8 @@ sub read_image {
 }
 
 exit main->new_with_options->run;
+
+=head1 PLEASE SEE FOR DOCUMENTATION
+
+L<AI::PredictionClient>
 

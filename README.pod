@@ -8,7 +8,7 @@ AI::PredictionClient - A Perl Prediction client for Google TensorFlow Serving.
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 DESCRIPTION
 
@@ -114,7 +114,7 @@ A longer article on setting up a server is here:
 =head1 ADDITIONAL INFO
 
 The design of this client is to be fairly easy for a developer to see how the data is formed and received. 
-The TensorFlow interface is based on Protocol Buffers ad gRPC. 
+The TensorFlow interface is based on Protocol Buffers and gRPC. 
 That implementation is built on a complex architecture of nested protofiles.
 
 In this design I flattened the architecture out and where the native data handling of Perl is best, 

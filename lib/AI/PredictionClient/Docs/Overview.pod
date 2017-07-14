@@ -1,14 +1,17 @@
-﻿use strict;
-use warnings;
-package AI::PredictionClient;
 
+# PODNAME: Overview.pod
 
-use AI::PredictionClient::Predict;
-use AI::PredictionClient::InceptionClient;
+=pod
 
-# ABSTRACT: A Perl Prediction client for Google TensorFlow Serving.
+=encoding UTF-8
 
-1;
+=head1 NAME
+
+AI::PredictionClient - A Perl Prediction client for Google TensorFlow Serving.
+
+=head1 VERSION
+
+version 0.01
 
 =head1 DESCRIPTION
 
@@ -134,8 +137,7 @@ One of the biggest advantages is for the developer who would like to quickly ext
 You can see how the data structures are built and directly manipulate them in Perl. 
 Of course, if you can be more forward looking, building the proper roles and classes and contributing them would be great. 
 
-
-=head1  DEPENDENCIES
+=head1 DEPENDENCIES
 
 The following dependencies need to be installed in order for gRPC to build:
 
@@ -158,6 +160,15 @@ At this time only Linux builds are supported.
 
 This is a complex package with a lot of moving parts. Please pardon if this first release has some minor bug or missing dependency that went undiscovered in my testing.
 
+=head1 AUTHOR
 
+Tom Stall <stall@cpan.org>
 
+=head1 COPYRIGHT AND LICENSE
 
+This software is copyright (c) 2017 by Tom Stall.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
