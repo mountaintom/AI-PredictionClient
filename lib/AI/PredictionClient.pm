@@ -141,9 +141,7 @@ The following dependencies need to be installed in order for gRPC to build:
 
  $ [sudo] apt-get install git
  $ [sudo] apt-get install build-essential autoconf libtool
- $ [sudo] apt-get install automake curl make g++ unzip pkg-config
- $ [sudo] apt-get install libgflags-dev libgtest-dev
- $ [sudo] apt-get install clang libc++-dev
+ $ [sudo] apt-get install automake curl make g++
 
 If gRPC is already installed on your system, the dependencies should reduce to:
 
@@ -153,6 +151,13 @@ If gRPC is going to be built (The module Alien::Google::GRPC will automatically 
 be prepared for a long build, as gRPC is a big library.
 
 At this time only Linux builds are supported.
+
+=head2 CPAN Testers Note
+
+It is normal for this module to fail the CPAN Testers' tests. 
+The build support tools needed by this module and especially the 
+Alien::Google::GRPC module are not normally installed on the 
+CPAN Testers' machines.
 
 =head2 NOTE
 

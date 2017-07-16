@@ -2,3 +2,6 @@
   - Initial release to CPAN
 0.02 2017-07-14
   - Fix dependencies found by CPAN testers. Documentation maintenance
+0.03 2017-07-16
+  - Bump up dependencies' version requirements
+

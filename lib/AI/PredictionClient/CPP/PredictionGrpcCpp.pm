@@ -10,7 +10,7 @@ use AI::PredictionClient::Alien::TensorFlowServingProtos;
 use Inline
   CPP => 'DATA',
   with => ['Alien::Google::GRPC', 'AI::PredictionClient::Alien::TensorFlowServingProtos'],
-  version => '0.02',
+  version => '0.03',
   name => 'AI::PredictionClient::CPP::PredictionGrpcCpp',
   TYPEMAPS => getcwd . '/blib/lib/AI/PredictionClient/CPP/Typemaps/more_typemaps_STL_String.txt',
   LIBS => '-ldl',
