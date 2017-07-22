@@ -134,30 +134,37 @@ One of the biggest advantages is for the developer who would like to quickly ext
 You can see how the data structures are built and directly manipulate them in Perl. 
 Of course, if you can be more forward looking, building the proper roles and classes and contributing them would be great. 
 
-
 =head1  DEPENDENCIES
 
-The following dependencies need to be installed in order for gRPC to build:
+This module is dependent on gRPC. This module will use the cpan module Alien::Google::GRPC to 
+either use an existing gRPC installation on your system or if not found, the Alien::Google::GRPC
+module will download and build a private copy.
 
+The system dependencies needed for this module to build are most often already installed. 
+If not, the following dependencies need to be installed.
+
+ $ [sudo] apt-get install build-essential make g++ curl
  $ [sudo] apt-get install git
- $ [sudo] apt-get install build-essential autoconf libtool
- $ [sudo] apt-get install automake curl make g++
 
-If gRPC is already installed on your system, the dependencies should reduce to:
+Installing autotools is optional. If they are installed this package will use them, 
+otherwise it will build and install its own local copies.
 
- $ [sudo] apt-get install build-essential make g++
+ $ [sudo] apt-get install autoconf automake libtool
 
-If gRPC is going to be built (The module Alien::Google::GRPC will automatically build it if needed) 
-be prepared for a long build, as gRPC is a big library.
+See the Alien::Google::GRPC for potential additional build dependencies.
 
 At this time only Linux builds are supported.
 
 =head2 CPAN Testers Note
 
-It is normal for this module to fail the CPAN Testers' tests. 
+This module may fail CPAN Testers' tests. 
 The build support tools needed by this module and especially the 
-Alien::Google::GRPC module are not normally installed on the 
-CPAN Testers' machines.
+Alien::Google::GRPC module are normally installed on the 
+CPAN Testers' machines, but not always.
+
+The system build tools dependencies have been reduced, so hopefully 
+a large number of machines will build without manually installing 
+system dependencies.
 
 =head2 NOTE
 
